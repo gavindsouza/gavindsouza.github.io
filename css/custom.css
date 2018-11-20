@@ -1,5 +1,5 @@
 html, body, div {
-    position: fixed;
+    position: relative;
     top: 0;
     bottom: 0;
     right: 0;
@@ -14,7 +14,8 @@ img {
     max-height: 100px;
 }
 
-h1, h2 {
+h1 {
     color: aliceblue;
     word-wrap: break-word;
+    font-size: small;
 }
