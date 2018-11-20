@@ -10,10 +10,10 @@
 	<link rel="icon" href="./img/site-icon.png" class="js-favicon">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="./css/bootstrap.min.css" >
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
 
 	<!--Custom CSS-->
-	<link rel="stylesheet" href="./css/custom.css" >
+	<link rel="stylesheet" href="./css/custom.css">
 
 	<!--Site Title-->
 	<title>gavin's world</title>
@@ -23,7 +23,9 @@
 	<div class="container text-center align-middle">
 		<br><br><br><br><br><br>
 		<h1 class="display-1 lead">Site Under Construction</h1>
-		<b class="display-2">👷‍</b>
+		<!--
+			<b class="display-2">👷‍</b>
+		-->
 		<h2 class="display-4 text-center">
 			🔨 Come back again at a later time 🔧<br>Find me on other social media
 		</h2>
@@ -52,6 +54,21 @@
 
 	<!--Required JavaScript-->
 	<script src="./js/links.js"></script>
+
+	<!--Firebase Content-->
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyBZ3AagzZI1gPDEzQm8bDmzoRTW-mgm59g",
+			authDomain: "gavindsouza-github-io.firebaseapp.com",
+			databaseURL: "https://gavindsouza-github-io.firebaseio.com",
+			projectId: "gavindsouza-github-io",
+			storageBucket: "gavindsouza-github-io.appspot.com",
+			messagingSenderId: "510073608812"
+		};
+		firebase.initializeApp(config);
+	</script>
 
 </body>
 
