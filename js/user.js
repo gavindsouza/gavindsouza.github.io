@@ -18,9 +18,7 @@ async function loadGitHubData() {
         else
             repos.push(myInfo[i]["name"]);
     }
-
     console.log(forks, repos);
-
 }
 
 

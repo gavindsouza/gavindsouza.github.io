@@ -7,4 +7,4 @@ var config = {
     storageBucket: "gavindsouza-github-io.appspot.com",
     messagingSenderId: "510073608812"
 };
-firebase.initializeApp(config);
+//firebase.initializeApp(config);
