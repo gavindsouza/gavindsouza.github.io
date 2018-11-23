@@ -1,3 +1,8 @@
+/*
+Basic service worker: but will work fine, for now
+ref: https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
+*/
+
 const staticAssets = [
     "/images/icons/icon-72x72.png",
     "/images/icons/icon-96x96.png",
@@ -67,3 +72,9 @@ async function networkFirst(request) {
         return await cache.match(request);
     }
 }
+
+/*
+To use a much better, much consice solution: try 'Workbox' 
+ref: https://developers.google.com/web/tools/workbox/
+vid-ref: https://www.youtube.com/watch?v=gcx-3qi7t7c 
+*/
