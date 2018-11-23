@@ -15,9 +15,32 @@ html, body, div {
     background-color: black;
 }
 
+/* this aint working tho */
+a:hover, a:focus {
+    background-color:transparent !important;
+}
+
 img {
-    max-width: 10vw;
-    max-height: 10vw;
+    max-width: 3vw;
+    max-height: 3vw;
+   
+}
+
+img:hover{
+    max-width: 3vw;
+    max-height: 3vw;
+    -webkit-filter: grayscale(10%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(10%);
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    img {
+        max-width: 3vw;
+        max-height: 3vw;
+        -webkit-filter: grayscale(10%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(10%) blur(3px);
+    }
 }
 
 h1 {
