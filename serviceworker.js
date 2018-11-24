@@ -20,7 +20,7 @@ const staticAssets = [
     "/js/main.js",
     "/js/links.js",
     "/js/responses.js",
-    "/js/user.js",
+    "/js/github.js",
 
     "/css/bootstrap.min.css",
     "/css/custom.css",
