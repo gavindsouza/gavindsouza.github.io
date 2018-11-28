@@ -23,7 +23,7 @@ async function loadGitHubData() {
 
 
 
-/*
+/* 
 first version: gitHub data
 
 let request = new XMLHttpRequest();
@@ -50,4 +50,4 @@ function OnSuccessfulLoadofJSON() {
 function OnUnsuccessfulLoadofJSON() {
     console.log("why is this happening to us :(\nPleasee tweet me @itbegavin, thanks :)");
 }
-*/
+ */
