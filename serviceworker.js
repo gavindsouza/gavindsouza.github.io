@@ -26,9 +26,9 @@ const staticAssets = [
     "/css/custom.css",
 
     "/index.html",
-    "/404.html",
+/*     "/404.html",
     "/robots.txt",
-    "/favicon.ico"
+    "/favicon.ico" */
 
 ]
 
