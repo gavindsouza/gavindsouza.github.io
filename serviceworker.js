@@ -3,6 +3,8 @@ Basic service worker: but will work fine, for now
 ref: https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 */
 
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js');
+
 const staticAssets = [
     "/images/icons/icon-72x72.png",
     "/images/icons/icon-96x96.png",
@@ -26,12 +28,16 @@ const staticAssets = [
     "/css/custom.css",
 
     "/index.html",
-/*     "/404.html",
+    "/404.html",
     "/robots.txt",
-    "/favicon.ico" */
-
+    "/favicon.ico"
 ]
 
+workbox.precache(staticAssets);
+workbox.router.registerRoute("https://api.github.com/users/gavindsouza/repos", wb.strategies.networkFirst());
+
+
+/*
 self.addEventListener('install', async event => {
     const cache = await caches.open("gavins-world");
     cache.addAll(staticAssets);
@@ -72,6 +78,7 @@ async function networkFirst(request) {
         return await cache.match(request);
     }
 }
+*/
 
 /*
 To use a much better, much consice solution: try 'Workbox' 
