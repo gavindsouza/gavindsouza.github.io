@@ -4,13 +4,21 @@ ref: https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 */
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js');
-workbox.setConfig({ debug: false });
+
+workbox.setConfig({ debug: true });   
+
+workbox.routing.registerRoute(
+    'https://api.github.com/users/gavindsouza/repos',
+    workbox.strategies.networkFirst()
+);
+
+
 workbox.routing.registerRoute(
     /.*\.(?:js|css|ico|png)$/,
-    // Use cache but update in the background ASAP
-    workbox.strategies.staleWhileRevalidate({
-        // Use a custom cache name
+    workbox.strategies.cacheFirst({
         cacheName: 'mega-cache',
+        cacheExpiration: {maxEntries: 20, maxAgeSeconds: 12 * 60 * 60},
+        cacheableResponse: {statuses: [0, 200]}
     })
 );
 
