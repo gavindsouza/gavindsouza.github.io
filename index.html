@@ -78,7 +78,7 @@
 			-->
 			
 			<br><br>
-			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Bonus Content</a>
+			<a id="bonus" class="btn btn-primary">Bonus Content</a>
 			
 			<br><br>
 			<!-- Button trigger modal -->
@@ -112,7 +112,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	
 	<script>
-	// Initialize Firebase
+	// Firebase Stuff
 	var config = {
 		apiKey: "AIzaSyBZ3AagzZI1gPDEzQm8bDmzoRTW-mgm59g",
 		authDomain: "gavindsouza-github-io.firebaseapp.com",
@@ -140,7 +140,22 @@
 		body.value = '';
 	}
 
-
+	//Bonus Material
+	bonus_links = [
+		"https://www.youtube.com/watch?v=LDU_Txk06tM",
+		"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+		"https://www.youtube.com/watch?v=PHgc8Q6qTjc",
+		"https://www.youtube.com/watch?v=Gs069dndIYk",
+		"https://www.youtube.com/watch?v=6okxuiiHx2w",
+		"https://www.youtube.com/watch?v=k3jlviX88iw",
+		"https://www.youtube.com/watch?v=YSzWd2Bnd-8",
+		"https://www.youtube.com/watch?v=u9ibC7XZJuM",
+		"https://www.youtube.com/watch?v=K3Qzzggn--s"
+	]
+	bonus = document.getElementById("bonus");
+	bonus.onclick = function(){
+		bonus.href = bonus_links[Math.floor(Math.random() * bonus_links.length)];
+	}
 	</script>
 </body>
 
