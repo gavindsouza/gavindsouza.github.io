@@ -10,8 +10,9 @@
 	<link rel="manifest" href="manifest.json">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
-
+	<!-- link rel="stylesheet" href="./css/bootstrap.min.css" -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
 	<!--Custom CSS-->
 	<link rel="stylesheet" href="./css/custom.css">
 
@@ -78,6 +79,19 @@
 			
 			<br><br>
 			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Bonus Content</a>
+			
+			<br><br>
+			<!-- Button trigger modal -->
+			<!--button type="button" class="btn btn-primary" data-toggle="modal" data-target="#messageModal">
+			Drop a Message
+			</button-->
+			<div class="container-fluid" align="center">
+				<form class="form-group col-lg-4" id="messageModal">
+						<input type="text" class="form-control" id="name" placeholder="Name">
+						<input type="text" class="form-control" id="text" placeholder="Type here">
+						<button type="button" class="btn btn-primary" onclick="sendMessage()">Submit</button>
+				</form>
+			</div>
 		</div>
 	</main>
 
@@ -90,9 +104,44 @@
 	<script src="./js/github.js"></script>
 
 	<!--Firebase Content-->
-	<!-- <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
-	<script src="./js/responses.js"></script> -->
+	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
 
+	<!--Bootstrap JS-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyBZ3AagzZI1gPDEzQm8bDmzoRTW-mgm59g",
+		authDomain: "gavindsouza-github-io.firebaseapp.com",
+		databaseURL: "https://gavindsouza-github-io.firebaseio.com",
+		projectId: "gavindsouza-github-io",
+		storageBucket: "gavindsouza-github-io.appspot.com",
+		messagingSenderId: "510073608812"
+	};
+
+	firebase.initializeApp(config);
+	var database = firebase.database();
+
+	function sendMessage() {
+		var name = document.getElementById('name');
+		var body = document.getElementById('text');
+		
+		var payload = {
+			username: name.value,
+			body : body.value
+		}
+		
+		firebase.database().ref("/users/"+ name.value).push(payload);
+
+		name.value = '';
+		body.value = '';
+	}
+
+
+	</script>
 </body>
 
 </html>

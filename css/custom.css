@@ -48,3 +48,14 @@ h1 {
     word-wrap: break-word;
     font-size: small;
 }
+
+.btn-primary{
+    background-color: transparent;
+    border-color: #ccc;
+  }
+
+  input[type="text"]
+  {
+      background: transparent;
+      border: none;
+  }
