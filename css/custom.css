@@ -5,7 +5,7 @@ html, body, div {
     bottom: 0;
     right: 0;
     left: 0;
-    
+
     height: 100vw;
     width: 100vw;
 
@@ -23,7 +23,7 @@ h1 {
     font-size: 100%;
 }
 
-/* this aint working tho 
+/* this aint working tho
 or maybe it is, lol
 */
 a:hover, a:focus {
@@ -32,7 +32,7 @@ a:hover, a:focus {
 
 img {
     max-width: 3vw;
-    max-height: 3vw;   
+    max-height: 3vw;
 }
 
 img:hover{
@@ -55,7 +55,7 @@ img:hover{
 button, a, input {
     background-color: transparent;
     border-color: #ccc;
-    color: transparent; 
+    color: transparent;
     background: transparent;
 }
 
@@ -95,32 +95,32 @@ input::placeholder{
     max-width: 300px;
     max-height: 120px;
   }
-  
+
   /* Show the snackbar when clicking on a button (class added with JavaScript) */
   #snackbar.show {
     visibility: visible; /* Show the snackbar */
-    /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
     However, delay the fade out process for 2.5 seconds */
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
   }
-  
+
   /* Animations to fade the snackbar in and out */
   @-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;} 
+    from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}
   }
-  
+
   @keyframes fadein {
     from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}
   }
-  
+
   @-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;} 
+    from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
   }
-  
+
   @keyframes fadeout {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}

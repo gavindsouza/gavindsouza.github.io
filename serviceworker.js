@@ -5,7 +5,7 @@ ref: https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js');
 
-workbox.setConfig({ debug: false });   
+workbox.setConfig({ debug: false });
 
 workbox.routing.registerRoute(
     'https://api.github.com/users/gavindsouza/repos',

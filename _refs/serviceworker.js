@@ -79,7 +79,7 @@ async function networkFirst(request) {
 }
 
 /*
-To use a much better, much consice solution: try 'Workbox' 
+To use a much better, much consice solution: try 'Workbox'
 ref: https://developers.google.com/web/tools/workbox/
-vid-ref: https://www.youtube.com/watch?v=gcx-3qi7t7c 
+vid-ref: https://www.youtube.com/watch?v=gcx-3qi7t7c
 */

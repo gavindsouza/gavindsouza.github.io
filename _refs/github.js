@@ -1,5 +1,5 @@
 
-/* 
+/*
 first version: gitHub data
 
 let request = new XMLHttpRequest();
