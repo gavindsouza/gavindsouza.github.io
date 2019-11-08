@@ -26,8 +26,16 @@ h1 {
 /* this aint working tho
 or maybe it is, lol
 */
+a {
+    color: black !important;
+}
+
 a:hover, a:focus {
-    background-color:transparent !important;
+    background-color:transparent;
+}
+
+#bonus:hover {
+    background-color:#FFD300 !important;
 }
 
 img {
