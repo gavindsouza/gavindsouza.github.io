@@ -7,7 +7,8 @@
 module.exports = {
   siteName: 'gavin\'s Blog',
   siteDescription: '!rant',
-  siteUrl: 'https://gavindsouza.in',
+  siteUrl: 'https://gavindsouza.github.io',
+  pathPrefix: '/gavindsouza.github.io',
 
   templates: {
     Post: '/:title',
