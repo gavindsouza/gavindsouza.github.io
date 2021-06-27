@@ -15,7 +15,7 @@ export default {
     Author
   },
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Redirecting...!'
   },
     mounted: function() {
       setInterval(

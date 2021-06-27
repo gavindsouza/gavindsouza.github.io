@@ -6,7 +6,7 @@
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -m 'chore: Deploy Updates' --no-history"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",

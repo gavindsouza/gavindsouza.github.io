@@ -49,7 +49,7 @@ export default {
     Hero
   },
   metaInfo: {
-    title: "Hello, world!",
+    title: 'Home'
   },
 };
 </script>

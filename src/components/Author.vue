@@ -60,9 +60,6 @@ export default {
 		margin-top: -.5em;
 		a {
 			margin: 0 .5em;
-		}
-		a:link {
-			color: blue;
 			background-color: transparent;
 			text-decoration: none;
 		}
