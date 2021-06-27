@@ -22,7 +22,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           commit-message: 'chore: Deploy Updates'
-          single-commit: true
           folder: dist
           branch: gh-pages
         env:
